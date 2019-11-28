@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/burguer-builder/static/css/main.b627fa54.chunk.css",
+    "main.js": "/burguer-builder/static/js/main.d5027cae.chunk.js",
+    "main.js.map": "/burguer-builder/static/js/main.d5027cae.chunk.js.map",
+    "runtime-main.js": "/burguer-builder/static/js/runtime-main.b19d5187.js",
+    "runtime-main.js.map": "/burguer-builder/static/js/runtime-main.b19d5187.js.map",
+    "static/js/2.9a3c12b9.chunk.js": "/burguer-builder/static/js/2.9a3c12b9.chunk.js",
+    "static/js/2.9a3c12b9.chunk.js.map": "/burguer-builder/static/js/2.9a3c12b9.chunk.js.map",
+    "index.html": "/burguer-builder/index.html",
+    "precache-manifest.f85d6df3b41a0e1b16b09375d58c098f.js": "/burguer-builder/precache-manifest.f85d6df3b41a0e1b16b09375d58c098f.js",
+    "service-worker.js": "/burguer-builder/service-worker.js",
+    "static/css/main.b627fa54.chunk.css.map": "/burguer-builder/static/css/main.b627fa54.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b19d5187.js",
+    "static/js/2.9a3c12b9.chunk.js",
+    "static/css/main.b627fa54.chunk.css",
+    "static/js/main.d5027cae.chunk.js"
+  ]
+}
