@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/burguer-builder/static/css/main.4ecff584.chunk.css",
+    "main.css": "/burguer-builder/static/css/main.6cd600dc.chunk.css",
     "main.js": "/burguer-builder/static/js/main.b40b3796.chunk.js",
     "main.js.map": "/burguer-builder/static/js/main.b40b3796.chunk.js.map",
     "runtime-main.js": "/burguer-builder/static/js/runtime-main.b19d5187.js",
@@ -8,14 +8,14 @@
     "static/js/2.21578d41.chunk.js": "/burguer-builder/static/js/2.21578d41.chunk.js",
     "static/js/2.21578d41.chunk.js.map": "/burguer-builder/static/js/2.21578d41.chunk.js.map",
     "index.html": "/burguer-builder/index.html",
-    "precache-manifest.0fc13a11c64cf755329d6a0eeea220dc.js": "/burguer-builder/precache-manifest.0fc13a11c64cf755329d6a0eeea220dc.js",
+    "precache-manifest.31ec6dc5a09f0a0e53d0b1bc686cd594.js": "/burguer-builder/precache-manifest.31ec6dc5a09f0a0e53d0b1bc686cd594.js",
     "service-worker.js": "/burguer-builder/service-worker.js",
-    "static/css/main.4ecff584.chunk.css.map": "/burguer-builder/static/css/main.4ecff584.chunk.css.map"
+    "static/css/main.6cd600dc.chunk.css.map": "/burguer-builder/static/css/main.6cd600dc.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.b19d5187.js",
     "static/js/2.21578d41.chunk.js",
-    "static/css/main.4ecff584.chunk.css",
+    "static/css/main.6cd600dc.chunk.css",
     "static/js/main.b40b3796.chunk.js"
   ]
 }
