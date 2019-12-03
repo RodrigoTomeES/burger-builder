@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dca2ce7408a4bfe51c3a83c7ddd09849",
+    "revision": "e7bb4b61f641b8a8490de18be75c3d00",
     "url": "/burguer-builder/index.html"
   },
   {
-    "revision": "0cdbdf710cf12f328614",
-    "url": "/burguer-builder/static/css/main.c05cfbcf.chunk.css"
+    "revision": "0bea025d25a1540bf917",
+    "url": "/burguer-builder/static/css/main.2702e645.chunk.css"
   },
   {
     "revision": "2609acac6b07f866c130",
     "url": "/burguer-builder/static/js/2.971e21c1.chunk.js"
   },
   {
-    "revision": "0cdbdf710cf12f328614",
+    "revision": "0bea025d25a1540bf917",
     "url": "/burguer-builder/static/js/main.97b54037.chunk.js"
   },
   {
