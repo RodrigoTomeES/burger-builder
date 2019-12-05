@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/burguer-builder/static/css/main.eb230903.chunk.css",
+    "main.css": "/burguer-builder/static/css/main.a48188ca.chunk.css",
     "main.js": "/burguer-builder/static/js/main.dedde953.chunk.js",
     "main.js.map": "/burguer-builder/static/js/main.dedde953.chunk.js.map",
     "runtime-main.js": "/burguer-builder/static/js/runtime-main.b19d5187.js",
@@ -8,15 +8,15 @@
     "static/js/2.4291d95f.chunk.js": "/burguer-builder/static/js/2.4291d95f.chunk.js",
     "static/js/2.4291d95f.chunk.js.map": "/burguer-builder/static/js/2.4291d95f.chunk.js.map",
     "index.html": "/burguer-builder/index.html",
-    "precache-manifest.1198b3a2fa62f8df8e23373f7ca32b60.js": "/burguer-builder/precache-manifest.1198b3a2fa62f8df8e23373f7ca32b60.js",
+    "precache-manifest.0e8d56e844fc374fefccdffe99453358.js": "/burguer-builder/precache-manifest.0e8d56e844fc374fefccdffe99453358.js",
     "service-worker.js": "/burguer-builder/service-worker.js",
-    "static/css/main.eb230903.chunk.css.map": "/burguer-builder/static/css/main.eb230903.chunk.css.map",
+    "static/css/main.a48188ca.chunk.css.map": "/burguer-builder/static/css/main.a48188ca.chunk.css.map",
     "static/media/burger-logo.png": "/burguer-builder/static/media/burger-logo.b8503d26.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b19d5187.js",
     "static/js/2.4291d95f.chunk.js",
-    "static/css/main.eb230903.chunk.css",
+    "static/css/main.a48188ca.chunk.css",
     "static/js/main.dedde953.chunk.js"
   ]
 }
