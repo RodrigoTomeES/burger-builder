@@ -22,6 +22,15 @@ const reducer = (state = initialState, action) => {
         case actionTypes.PURCHASE_BURGER_FAIL:
             updatedState = purchaseBurgerFail(state, action, updatedState);
             break;
+        case actionTypes.FETCH_ORDERS_START:
+            updatedState = fetchOrdersStart(state, action, updatedState);
+            break;
+        case actionTypes.FETCH_ORDERS_SUCCESS:
+            updatedState = fetchOrdersSuccess(state, action, updatedState);
+            break;
+        case actionTypes.FETCH_ORDERS_FAIL:
+            updatedState = fetchOrdersFail(state, action, updatedState);
+            break;
         default:
             console.log("[Order Reducer] Action default case");
             break;
@@ -55,6 +64,22 @@ const purchaseBurgerSuccess = (state, action, updatedState) => {
 }
 
 const purchaseBurgerFail = (state, action, updatedState) => {
+    updatedState.loading = false;
+    return updatedState;
+}
+
+const fetchOrdersStart = (state, action, updatedState) => {
+    updatedState.loading = true;
+    return updatedState;
+}
+
+const fetchOrdersSuccess = (state, action, updatedState) => {
+    updatedState.loading = false;
+    updatedState.orders = action.orders;
+    return updatedState;
+}
+
+const fetchOrdersFail = (state, action, updatedState) => {
     updatedState.loading = false;
     return updatedState;
 }
