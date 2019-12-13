@@ -7,9 +7,11 @@ const INGREDIENT_PRICES = {
     meat: 1.3
 }
 
+const BASE_PRICE = 4;
+
 const initialState = {
     ingredients: null,
-    totalPrice: 5,
+    totalPrice: BASE_PRICE,
     error: false
 };
 
@@ -53,7 +55,7 @@ const removeIngredient = (state, action, updatedState) => {
 }
 
 const setIngredient = (state, action, updatedState) => {
-    let price = state.totalPrice;
+    let price = BASE_PRICE;
     for (let ingredient in action.ingredients) {
         price += INGREDIENT_PRICES[ingredient] * action.ingredients[ingredient];
     }
