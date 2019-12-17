@@ -21,7 +21,7 @@ export const authStart = () => {
     };
 };
 
-export const auth = (email, password) => {
+export const auth = (email, password, isSignup) => {
     return dispatch => {
         dispatch(authStart());
         const authData = {
@@ -29,12 +29,18 @@ export const auth = (email, password) => {
             password: password,
             returnSecureToken: true
         }
-        axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=[API_KEY]', authData)
+        const API_TOKEN = '[API_KEY]';
+        console.log(isSignup)
+        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + API_TOKEN;
+        if (!isSignup) {
+            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + API_TOKEN;
+        }
+        axios.post(url, authData)
             .then(response => {
-                //dispatch(authSuccess(response.data));
+                dispatch(authSuccess(response.data));
             })
             .catch(error => {
-                //dispatch(authFail(error));
+                dispatch(authFail(error));
             });
     };
 };
