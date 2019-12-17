@@ -20,6 +20,9 @@ const reducer = (state = initialState, action) => {
         case actionTypes.AUTH_FAIL:
             updatedState = authFail(state, action, updatedState);
             break;
+        case actionTypes.AUTH_LOGOUT:
+            updatedState = authLogout(state, action, updatedState);
+            break;
         default:
             console.log("[Auth Reducer] Action default case");
             break;
@@ -46,8 +49,13 @@ const authSuccess = (state, action, updatedState) => {
 }
 
 const authFail = (state, action, updatedState) => {
-    console.log(action)
     updatedState.error = action.error;
     updatedState.loading = false;
+    return updatedState;
+}
+
+const authLogout = (state, action, updatedState) => {
+    updatedState.token = null;
+    updatedState.userId = null;
     return updatedState;
 }
