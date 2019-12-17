@@ -49,7 +49,8 @@ class ContactData extends Component {
                 validation: {
                     required: true,
                     minLength: 5,
-                    maxLength: 5
+                    maxLength: 5,
+                    isNumeric: true
                 },
                 valid: false,
                 touched: false
@@ -75,7 +76,8 @@ class ContactData extends Component {
                 },
                 value: '',
                 validation: {
-                    required: true
+                    required: true,
+                    isEmail: true
                 },
                 valid: false,
                 touched: false
@@ -127,6 +129,16 @@ class ContactData extends Component {
             isValid = value.length <= rules.maxLength && isValid;
         }
 
+        if (rules.isEmail) {
+            const pattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
+            isValid = pattern.test(value) && isValid
+        }
+
+        if (rules.isNumeric) {
+            const pattern = /^\d+$/;
+            isValid = pattern.test(value) && isValid
+        }
+
         return isValid;
     }
 
@@ -166,17 +178,17 @@ class ContactData extends Component {
 
         let form = (
             <form onSubmit={this.orderHandler}>
-                {formElementsArray.map(forElement => (
+                {formElementsArray.map(formElement => (
                     <Input 
-                        key={forElement.id}
-                        elementType={forElement.config.elementType} 
-                        elementConfig={forElement.config.elementConfig} 
-                        value={forElement.config.value}
-                        valueType={forElement.config.elementConfig.placeholder}
-                        invalid={!forElement.config.valid}
-                        shouldValidate={forElement.config.validation}
-                        touched={forElement.config.touched}
-                        changed={(event) => this.inputChangedHandler(event, forElement.id)}
+                        key={formElement.id}
+                        elementType={formElement.config.elementType} 
+                        elementConfig={formElement.config.elementConfig} 
+                        value={formElement.config.value}
+                        valueType={formElement.config.elementConfig.placeholder}
+                        invalid={!formElement.config.valid}
+                        shouldValidate={formElement.config.validation}
+                        touched={formElement.config.touched}
+                        changed={(event) => this.inputChangedHandler(event, formElement.id)}
                     />
                 ))}
                 <Button btnType="Success" disabled={!this.state.formIsValid}>ORDER</Button>
