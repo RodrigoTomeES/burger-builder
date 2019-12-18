@@ -2,7 +2,7 @@ import axios from 'axios';
 
 import * as actionTypes from './actionTypes';
 
-const API_TOKEN = 'AIzaSyD_yzOfZNril23UYfoTG2-4FfVQJK_ZhBY';
+const FIREBASE_API_TOKEN = 'AIzaSyD_yzOfZNril23UYfoTG2-4FfVQJK_ZhBY';
 
 export const authSuccess = (token, userId) => {
     return {
@@ -50,9 +50,9 @@ export const auth = (email, password, isSignup) => {
             returnSecureToken: true
         }
 
-        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + API_TOKEN;
+        let url = 'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=' + FIREBASE_API_TOKEN;
         if (!isSignup) {
-            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + API_TOKEN;
+            url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=' + FIREBASE_API_TOKEN;
         }
 
         axios.post(url, authData)
