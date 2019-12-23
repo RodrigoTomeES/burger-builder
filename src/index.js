@@ -27,7 +27,7 @@ const store = createStore(
 
 const app = (
     <Provider store={store}>
-        <BrowserRouter basename='/burguer-builder/'>
+        <BrowserRouter basename='/burger-builder/'>
             <App />
         </BrowserRouter>
     </Provider>
