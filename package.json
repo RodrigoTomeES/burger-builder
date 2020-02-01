@@ -1,6 +1,6 @@
 {
   "name": "burger-builder",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "private": true,
   "homepage": "https://rodrigotomees.github.io/burger-builder",
   "dependencies": {
@@ -22,6 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "test-all": "CI=true npm run test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
