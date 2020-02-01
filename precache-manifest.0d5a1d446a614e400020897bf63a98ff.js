@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "27b1f5f60c8914c4c76370fe3831d20d",
+    "revision": "7897414e6c227ed0333f15fd6981e84c",
     "url": "/burger-builder/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/burger-builder/static/css/5.9f2ac642.chunk.css"
   },
   {
-    "revision": "f4e45dbb3eb54d74d59d",
-    "url": "/burger-builder/static/css/main.c7dd8dae.chunk.css"
+    "revision": "127be5380e99b6f37e3d",
+    "url": "/burger-builder/static/css/main.89a20593.chunk.css"
   },
   {
     "revision": "0fdfb097ca1a54349dcb",
@@ -40,7 +40,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/burger-builder/static/js/5.d6d4bab2.chunk.js"
   },
   {
-    "revision": "f4e45dbb3eb54d74d59d",
+    "revision": "127be5380e99b6f37e3d",
     "url": "/burger-builder/static/js/main.f234df49.chunk.js"
   },
   {
